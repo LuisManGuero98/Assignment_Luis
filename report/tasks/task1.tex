@@ -1,0 +1,19 @@
+\section{Task 1}
+\label{task1}
+
+A mars explorer ground robot, namely nasa perseverance, is simulated leveraging the existing Gazebo environment from \href{https://github.com/AndrejOrsula/space_robotics_gz_envs.git}{Space Robotics Github}. 
+The environment is depicted in Figure \ref{fig:env}.
+\vspace{0.2cm}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\linewidth]{Figures/simulation.png}
+    \caption{Simulated Gazebo environment.}
+    \label{fig:env}
+\end{figure}
+
+The simulated robot provides pose, odometry and velocity data through Gazebo topics. Similarly, it is controlled through linear and angular velocity commands sent to \textit{\/cmd\_vel} topic.
+The velocities are constraint to $[-5, 5]$ and to $[-1, 1]$ for linear and angular velocities respectively.
+\vspace{0.2cm}
+
+Therefore, a circular path can be simulated by sending simultaneously linear and angular velocity commands. 

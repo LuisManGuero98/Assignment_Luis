@@ -1,0 +1,10 @@
+\section{Task 2}
+\label{Task 2}
+
+For navigation purposes, sensors should be incorporated into the simulated robot model. Hence, a 3D LiDAR sensor can be added to visualize the surrounding environment and to detect obstacles.
+\vspace{0.2cm}
+
+Subsequently, collision boxes should be defined for the robot model to enable obstacle detection. This can be achieved by modifying the robot's URDF or SDF files to include appropriate collision elements that represent the physical boundaries of the robot.
+\vspace{0.2cm}
+
+For a more robust pose estimation, an Extended Kalman Filter (EKF) can be implemented to fuse data from LiDAR odometry, IMU, and wheel odometry (these sensors would also need to be added to the simulation).  
